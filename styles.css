@@ -434,7 +434,7 @@ body{
 
 @media (max-width:920px){
     #search-bar {
-        color: #111;
+        color: #fff;
     }
 }
 
@@ -509,6 +509,10 @@ body{
 }
 
 @media (max-width:360px) {
+
+    .all-cars {
+        font-size: 2rem;
+    }
     .search-box input {
         padding: 11px;
     }
