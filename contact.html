@@ -4,44 +4,118 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Car Website</title>
+    <title>Contact Us</title>
     <!-- Google Font  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
-    <!-- CSS link -->
+    <!-- link to css  -->
     <link rel="stylesheet" href="styles.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <!-- Boot strap loader -->
-</head>   
+</head>
 <body>
     <section id="navigation">
         <div class="nav container">
             <!-- Menu Bar -->
             <i class='bx bx-menu menu-icon'></i>
             <!-- Logo -->
-            <a class="logo" href="#navigation">Car<span>Website</span></a>
+            <a class="logo" href="#home">Car<span>Website</span></a>
             <!-- Nav list -->
             <ul class="nav-bar" >
-            <li><a class="active" href="#home">Home</a></li> 
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#parts">Parts</a></li>
-            <li><a href="#contact">Contact Us</a></li>
+            <li><a class="active" href="index.html">Home</a></li> 
+            <li><a href="index.html">About</a></li>
+            <li><a href="index.html">Services</a></li>
+            <li><a href="index.html">Parts</a></li>
+            <li><a href="contact.html"  >Contact Us</a></li>
             </ul>
+            
+
+            <!-- Search bar -->
+            <i class='bx bx-search ' id="search-bar" ></i>
+            <!-- Search box -->
+            <div class="search-box container">
+            <input type="search" name="" placeholder="Search here...">
+            </div>
         </div>
     </section>
-    
-        <section class="home" id="home">
-        
-            <div class="home-text">
 
-                <h1>Send a message <br> Now </h1>
-                <p>Lorem ipsum dolor sit amet <br> consectetur adipiscing elitsmod tempor incididunt.</p>
-                <!-- Home button  -->
-               
+    <section class="contact-us-now" id="contact-now">
+
+        <div class="contact-us container">
+            <form method="POST" action="https://formsubmit.co/joemuvli@gmail.com" enctype="multipart/form-data">
+                <input type="hidden" name="_next" value="https://www.oliverchuks.github.io/car-website/thanks.html">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="text" name="_honey" style="display:none">
+                <h3>Email Address</h3>
+                <input type="email" name="email" placeholder="Your email" required>
+                <h3>Your name</h3>
+                <textarea class="message-us" name="message" placeholder="Send a message"></textarea required>
+                <input  type="file" style="display: block; margin: 10px;" name="attachment" accept="image/png, image/jpeg">
+                <button class="btn" style="display: block; margin: 10px;" type="submit">Submit</button>
+            </form>
+        </div>
+
+    </section>
+
+    <section class="footer">
+
+        <div class="footer-container container">
+
+            <div class="footer-box">
+                <a href="" class="logo">Car<span>Website</span></a>
+                <div class="social">
+                    <a href="#"><i class="bx bxl-facebook"></i></a>
+                    <a href="#"><i class="bx bxl-twitter"></i></a>
+                    <a href="#"><i class="bx bxl-instagram"></i></a>
+                    <a href="#"><i class="bx bxl-whatsapp"></i></a>
+                </div>
+
+                <div class="footer-box">
+                    <h3>Page</h3>
+                    <a href="#">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#parts">Parts</a>
+                    <a href="#parts">Services</a>
+                </div>
+
+                <div class="footer-box">
+                    <h3>Legal</h3>
+                    <a href="#">Privacy</a>
+                    <a href="#">Refund Policy</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+
+                <div class="footer-box">
+                    <h3>Contact</h3>
+                    <span>Europe</span>
+                    <span>Nigeria</span>
+                    <span>Cameroon</span>
+                </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-</body>            
+    <!-- Copyright -->
+
+    <div class="copyright">
+        <p> &#169; CarWebsite All Right Reserved </p>
+    </div>
+
+    <!-- link to js  -->
+    <script src="main.js"></script>
+       <!-- Link to WhatsApp -->
+    <script type="text/javascript">
+        (function () {
+            var options = {
+                whatsapp: "+2348133519395", // WhatsApp number
+                call_to_action: "Need help? Contact us directly", // Call to action
+                position: "right", // Position may be 'right' or 'left'
+            };
+            var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
+            var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+            s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+            var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+        })();
+    </script>
+</body>
 </html>
