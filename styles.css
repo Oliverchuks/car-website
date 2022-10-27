@@ -528,3 +528,27 @@ body{
         display: contents;
     }
 }
+
+#contact-now {
+    display: flex;
+    width: 100%;
+    min-height: 640px;
+    background: url(img/pexels-miguel-á-padriñán-1591062.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center left;
+    padding: 150px;
+    max-width: 1400px;
+    align-items: center;
+}
+
+.contact-us h3 {
+    color: var(--bg-color);
+    padding: 10px;
+}
+
+.contact-us .message-us input {
+    padding: 20px 20px;
+    align-items: center;
+    box-shadow: 4px 4px 20px rgb(15, 54, 55/ 20%);
+}
