@@ -24,3 +24,9 @@ let navigation = document.querySelector('#navigation');
 window.addEventListener('scroll' , () => {
     navigation.classList.toggle('shadow', window.scrollY > 0);
 });
+
+//Preloader
+
+window.onload = () => {
+    document.getElementById('preloader').style.display = 'none'
+}
