@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thank you!</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
@@ -19,11 +20,11 @@
             <a class="logo" href="#home">Car<span>Website</span></a>
             <!-- Nav list -->
             <ul class="nav-bar" >
-            <li><a class="active" href="#home">Home</a></li> 
-            <li><a href="#about">About</a></li>
+            <li><a href="index.html">Home</a></li> 
+            <li><a href="index.html">About</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#parts">Parts</a></li>
-            <li><a href="contact.html"  >Contact Us</a></li>
+            <li><a class="active" href="contact.html"  >Contact Us</a></li>
             </ul>
             
 
@@ -36,8 +37,69 @@
         </div>
     </section>
 
-    <h1>Thank you! We'll contact you soon.</h1>
+    <h1 style="color: #111; padding:200px;">Thank you! We'll contact you soon.</h1>
 
-    <a href="#home">Go back</a>
+    <a class="btn"  href="index.html">Go back</a>
+
+    <section class="footer">
+
+        <div class="footer-container container">
+
+            <div class="footer-box">
+                <a href="" class="logo">Car<span>Website</span></a>
+                <div class="social">
+                    <a href="#"><i class="bx bxl-facebook"></i></a>
+                    <a href="#"><i class="bx bxl-twitter"></i></a>
+                    <a href="#"><i class="bx bxl-instagram"></i></a>
+                    <a href="https://wa.link/4uh2og"><i class="bx bxl-whatsapp"></i></a>
+                </div>
+
+                <div class="footer-box">
+                    <h3>Page</h3>
+                    <a href="#">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#parts">Parts</a>
+                    <a href="#parts">Services</a>
+                </div>
+
+                <div class="footer-box">
+                    <h3>Legal</h3>
+                    <a href="#">Refund Policy</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+
+                <div class="footer-box">
+                    <h3>Contact info</h3>
+                    <span>Europe</span>
+                    <span>Nigeria</span>
+                    <span>Cameroon</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Copyright -->
+
+    <div class="copyright">
+        <p> &#169; CarWebsite All Right Reserved </p>
+    </div>
+
+    <!-- Link to js -->
+ <script src="main.js"></script>
+
+    <!-- Link to WhatsApp -->
+ <script type="text/javascript">
+    (function () {
+        var options = {
+            whatsapp: "+2348133519395", // WhatsApp number
+            call_to_action: "Need help? Contact us directly", // Call to action
+            position: "right", // Position may be 'right' or 'left'
+        };
+        var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
+        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+        s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+    })();
+</script>
 </body>
 </html>
