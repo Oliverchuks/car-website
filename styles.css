@@ -440,14 +440,16 @@ body{
 }
 
 @media (max-width:700px) {
+
     .contact-container {
+        width: 100%;
         grid-template-columns: 1fr;
-        gap:  1rem;
+        gap: 2rem;
         margin-top: 5rem !important;
     }
 
     .map iframe {
-        height: 500px;
+        visibility: hidden;
     }
 }
 
@@ -568,10 +570,7 @@ body{
     flex-direction: column;
     height: 100vh;
     color: #fff;
-    background: url(img/pexels-miguel-á-padriñán-1591062.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center left;
+    background: #664bb1;
     justify-content: center
 }
 
@@ -580,7 +579,8 @@ body{
     margin: auto;
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    background: #363953;
+    grid-template-columns: 1fr 1fr;
     gap: 1.5rem;
     box-shadow: 0 0 1rem hsla(0, 0, 0, 16%);
     overflow: hidden;
@@ -588,13 +588,13 @@ body{
 }
 
 .form-container {
-    padding: 20px;
+    padding: 25px;
 }
 
 .form-container h3{
     font-size: 1.3rem;
-    font-weight: 300;
-    margin-bottom: 1rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
 }
 
 .contact-form {
@@ -643,6 +643,7 @@ body{
     display: flex;
     color: #111;
     justify-content: center;
+    margin-top: 9rem !important;
     padding: 10%;
     width: 100%;
 }
