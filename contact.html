@@ -17,7 +17,7 @@
 
     <div id="preloader"></div>
 
-    
+
     <section id="navigation">
         <div class="nav container">
             <!-- Menu Bar -->
@@ -45,20 +45,27 @@
 
     <section class="contact-us-now" id="contact-now">
 
-        <div class="contact-us container">
-            <form method="POST" action="https://formsubmit.co/fd686370d86bfb1b5eafcb6c9ba0e916" enctype="multipart/form-data">
-                <input type="hidden" name="_next" value="https://www.oliverchuks.github.io/car-website/thanks.html">
-                <input type="hidden" name="_captcha" value="false">
-                <input type="text" name="_honey" style="display:none">
-                <h3>Email Address</h3>
-                <input type="email" name="email" placeholder="Your email" required>
-                <h3>Your name</h3>
-                <textarea class="message-us" name="message" placeholder="Send a message"></textarea required>
-                <input  type="file" style="display: block; margin: 10px;" name="attachment" accept="image/png, image/jpeg">
-                <button class="btn" style="display: block; margin: 10px;" type="submit">Submit</button>
-            </form>
-        </div>
+        <div class="contact-container">
 
+            <div class="form-container">
+
+                <h3>Message Us</h3>
+                <form method="post" action="https://formsubmit.co/fd686370d86bfb1b5eafcb69ba0e916" class="contact-form" enctype="multipart/form-data">
+                    <input type="text" name="name" placeholder="Your name" required>
+                    <input type="email" name="email" id="" placeholder="Enter Your Email" required>
+                    <textarea name="message" id="" cols="30" rows="10"></textarea>
+                    <input type="submit" value="Send" class="send-button" >
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="text" name="_honey" style="display:none">
+                    <input type="hidden" name="_next" value="https://oliverchuks.github.io/car-website/thanks.html">
+                </form>
+            </div>
+
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8070159.793599862!2d4.177370351591162!3d9.017363142730577!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e0baf7da48d0d%3A0x99a8fe4168c50bc8!2sNigeria!5e0!3m2!1sen!2sus!4v1667033514562!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+       
     </section>
 
     <section class="footer">
@@ -71,7 +78,7 @@
                     <a href="#"><i class="bx bxl-facebook"></i></a>
                     <a href="#"><i class="bx bxl-twitter"></i></a>
                     <a href="#"><i class="bx bxl-instagram"></i></a>
-                    <a href="#"><i class="bx bxl-whatsapp"></i></a>
+                    <a href="https://wa.link/4uh2og"><i class="bx bxl-whatsapp"></i></a>
                 </div>
 
                 <div class="footer-box">
@@ -105,9 +112,9 @@
         <p> &#169; CarWebsite All Right Reserved </p>
     </div>
 
-    <!-- link to js  -->
+    link to js 
     <script src="main.js"></script>
-       <!-- Link to WhatsApp -->
+        Link to WhatsApp 
     <script type="text/javascript">
         (function () {
             var options = {

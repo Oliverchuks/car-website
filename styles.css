@@ -432,6 +432,25 @@ body{
    }
 }
 
+@media (max-width:964px) {
+    .contact-container {
+        margin: 0 auto;
+        width: 90%;
+    }
+}
+
+@media (max-width:700px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap:  1rem;
+        margin-top: 5rem !important;
+    }
+
+    .map iframe {
+        height: 500px;
+    }
+}
+
 @media (max-width:920px){
     #search-bar {
         color: #fff;
@@ -527,30 +546,97 @@ body{
     .home-text p br {
         display: contents;
     }
+
+      
+    #contact-now {
+        min-height: 500px;
+        padding: 100px;
+    }
+    .contact-us h3 {
+        color: var(--bg-color);
+        padding: 10px;
+    }
+    
+    .contact-us .message-us input {
+        padding: 20px 20px;
+        box-shadow: 4px 4px 20px rgb(15, 54, 55/ 20%);
+    }
 }
 
 #contact-now {
     display: flex;
-    width: 100%;
-    min-height: 640px;
+    flex-direction: column;
+    height: 100vh;
+    color: #fff;
     background: url(img/pexels-miguel-á-padriñán-1591062.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center left;
-    padding: 150px;
-    max-width: 1400px;
-    align-items: center;
+    justify-content: center
 }
 
-.contact-us h3 {
-    color: var(--bg-color);
+.contact-container {
+    max-width: 960px;
+    margin: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    box-shadow: 0 0 1rem hsla(0, 0, 0, 16%);
+    overflow: hidden;
+    border-radius: 0.5rem;
+}
+
+.form-container {
+    padding: 20px;
+}
+
+.form-container h3{
+    font-size: 1.3rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.contact-form {
+    display: grid;
+    row-gap: 1rem;
+}
+
+.contact-form input,
+ .contact-form textarea {
+    width: 100%;
+    border: none;
+    outline: none;
     padding: 10px;
+    background: #2c2f48;
+    font-size: 0.9rem;
+    color: #fff;
+    border-radius: 0.4rem;
 }
 
-.contact-us .message-us input {
-    padding: 20px 20px;
-    align-items: center;
-    box-shadow: 4px 4px 20px rgb(15, 54, 55/ 20%);
+.contact-form textarea {
+    resize: none;
+    height: 200px;
+}
+
+.contact-form .send-button {
+    border: none;
+    outline: none;
+    background: #7d63c4;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.contact-form .send-button:hover {
+    background: #6734f3;
+    transition: 0.3s all linear;
+}
+
+.map iframe {
+    width: 100%;
+    height: 100%;
 }
 
 #preloader {
